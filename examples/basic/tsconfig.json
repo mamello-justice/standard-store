@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "noEmit": true,
+    "paths": {
+      "@standard-store/spec": ["../../packages/spec/src/index.ts"],
+      "@standard-store/store": ["../../packages/store/src/index.ts"],
+      "@standard-store/adapters/*": ["../../packages/adapters/src/*/index.ts"]
+    }
+  },
+  "include": ["src"]
+}

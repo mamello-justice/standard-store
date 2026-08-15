@@ -1,0 +1,17 @@
+{
+  "name": "@standard-store/example-cookie",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@standard-store/spec": "workspace:*",
+    "@standard-store/store": "workspace:*",
+    "@standard-store/adapters": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
+}

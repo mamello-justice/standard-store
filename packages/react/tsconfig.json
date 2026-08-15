@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "jsx": "react-jsx",
+    "paths": {
+      "@standard-store/spec": ["../spec/src/index.ts"],
+      "@standard-store/store": ["../store/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}

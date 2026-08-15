@@ -1,0 +1,60 @@
+{
+  "name": "@standard-store/adapters",
+  "version": "0.1.0",
+  "description": "Storage adapters for standard store",
+  "type": "module",
+  "exports": {
+    "./memory": {
+      "types": "./dist/memory/index.d.ts",
+      "import": "./dist/memory/index.js"
+    },
+    "./local-storage": {
+      "types": "./dist/local-storage/index.d.ts",
+      "import": "./dist/local-storage/index.js"
+    },
+    "./session-storage": {
+      "types": "./dist/session-storage/index.d.ts",
+      "import": "./dist/session-storage/index.js"
+    },
+    "./react-router": {
+      "types": "./dist/react-router/index.d.ts",
+      "import": "./dist/react-router/index.js"
+    },
+    "./nuqs": {
+      "types": "./dist/nuqs/index.d.ts",
+      "import": "./dist/nuqs/index.js"
+    },
+    "./cookie": {
+      "types": "./dist/cookie/index.d.ts",
+      "import": "./dist/cookie/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@standard-store/spec": "workspace:*"
+  },
+  "peerDependencies": {
+    "react-router": ">=7.0.0",
+    "nuqs": ">=2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-router": {
+      "optional": true
+    },
+    "nuqs": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "vite": "^6.3.0",
+    "vite-plugin-dts": "^4.5.0"
+  }
+}

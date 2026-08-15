@@ -1,0 +1,17 @@
+# Editors
+.vscode
+.zed
+
+# Node
+node_modules
+
+# Build
+dist
+tsconfig.tsbuildinfo
+
+# Logs
+*.log
+
+# Misc
+.DS_Store
+.env

@@ -1,0 +1,20 @@
+{
+  "name": "@standard-store/example-react",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@standard-store/spec": "workspace:*",
+    "@standard-store/store": "workspace:*",
+    "@standard-store/adapters": "workspace:*",
+    "@standard-store/react": "workspace:*",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.8.0"
+  }
+}

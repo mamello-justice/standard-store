@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "paths": {
+      "@standard-store/spec": ["../spec/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}

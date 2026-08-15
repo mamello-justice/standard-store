@@ -1,0 +1,27 @@
+{
+  "name": "@standard-store/source",
+  "description": "Standard schema for storing and retrieving data in a structured way.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Mamello Seboholi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mamello-justice/standard-store"
+  },
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r exec rm -rf dist"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "typescript": "^5.8.0",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^6.3.0",
+    "vite-plugin-dts": "^4.5.0"
+  },
+  "packageManager": "pnpm@11.17.0"
+}
