@@ -1,8 +1,10 @@
 {
   "files": [],
   "references": [
-    { "path": "packages/spec" },
-    { "path": "packages/store" },
-    { "path": "packages/react" }
+    { "path": "packages/eslint/tsconfig.lib.json" },
+    { "path": "packages/spec/tsconfig.lib.json" },
+    { "path": "packages/store/tsconfig.lib.json" },
+    { "path": "packages/react/tsconfig.lib.json" },
+    { "path": "packages/adapters/tsconfig.lib.json" }
   ]
 }

@@ -1,5 +1,5 @@
-import { createStore, validate } from "@standard-store/store";
 import { memoryAdapter } from "@standard-store/adapters/memory";
+import { createStore, validate } from "@standard-store/store";
 
 interface AppState {
   theme: "light" | "dark";

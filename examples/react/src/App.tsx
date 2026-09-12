@@ -1,4 +1,4 @@
-import { useStore, useHydrate, StoreProvider } from "./hooks";
+import { StoreProvider,useHydrate, useStore } from "./hooks";
 
 function ThemeToggle() {
   const [theme, setTheme] = useStore("theme");

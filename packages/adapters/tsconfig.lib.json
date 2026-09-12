@@ -3,12 +3,12 @@
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
+    "lib": ["ESNext", "DOM"],
+    "composite": true,
     "declaration": true,
-    "emitDeclarationOnly": true,
-    "paths": {
-      "@standard-store/spec": ["../spec/src/index.ts"]
-    }
+    "emitDeclarationOnly": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "references": [{ "path": "../spec/tsconfig.lib.json" }]
 }

@@ -1,7 +1,7 @@
-import type { TemporalDurationLike } from "@standard-store/spec";
-import { createStore, logger } from "@standard-store/store";
 import { localStorageAdapter } from "@standard-store/adapters/local-storage";
 import { memoryAdapter } from "@standard-store/adapters/memory";
+import type { TemporalDurationLike } from "@standard-store/spec";
+import { createStore, logger } from "@standard-store/store";
 
 interface AppState {
   theme: "light" | "dark";

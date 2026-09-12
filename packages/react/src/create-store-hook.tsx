@@ -1,9 +1,9 @@
 import {
+  type Context,
+  type ReactNode,
   useCallback,
   useEffect,
   useSyncExternalStore,
-  type Context,
-  type ReactNode,
 } from "react";
 import type { Expiry, StandardStoreV1 } from "@standard-store/spec";
 

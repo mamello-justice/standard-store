@@ -1,0 +1,39 @@
+---
+title: Installation
+description: Install Standard Store packages using your preferred package manager.
+
+---
+import { PackageManagers } from "starlight-package-managers"
+
+## Prerequisites
+
+Before installing Standard Store, ensure you have the following:
+
+- Node.js (version 16 or higher)
+
+<PackageManagers pkg="@standard-store/store" />
+
+## With React
+
+For React projects, install the React integration package:
+
+<PackageManagers pkg="@standard-store/store @standard-store/react" />
+
+## With Storage Adapters
+
+To use built-in adapters (localStorage, cookies, URL state, etc.):
+
+<PackageManagers pkg="@standard-store/store @standard-store/adapters" />
+
+All available adapters are included in the `@standard-store/adapters` package:
+
+- localStorage
+- sessionStorage  
+- Cookie
+- In-Memory
+- Next.js nuqs
+- React Router
+
+## See Also
+
+- [Quick Start](./quick-start.md) - Get started with Standard Store

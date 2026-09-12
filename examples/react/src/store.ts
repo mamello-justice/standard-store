@@ -1,5 +1,5 @@
-import { createStore } from "@standard-store/store";
 import { localStorageAdapter } from "@standard-store/adapters/local-storage";
+import { createStore } from "@standard-store/store";
 
 export interface AppState {
   theme: "light" | "dark";

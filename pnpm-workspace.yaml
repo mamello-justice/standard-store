@@ -1,5 +1,33 @@
 packages:
-  - 'examples/*'
-  - 'packages/*'
+  - "apps/*"
+  - "examples/*"
+  - "packages/*"
+
 allowBuilds:
+  core-js: true
   esbuild: true
+
+catalog:
+  "@types/node": "^22.20.1"
+  eslint: "^10.10.0"
+
+catalogs:
+  typescript6:
+    typescript: "npm:@typescript/typescript6@^6.0.2"
+  typescript7:
+    "@typescript/native": "npm:typescript@^7.0.2"
+
+overrides:
+  webpack: 5.95.0
+
+# Dependency policy:
+# - All libraries must be at least 7 days old before being added to the workspace
+# - This ensures dependencies have had time for initial bug fixes and security patches
+# - Exception: critical security patches may be approved by maintainers
+minimumReleaseAge: 10080
+
+patchedDependencies:
+  eslint-plugin-react: patches/eslint-plugin-react.patch
+
+minimumReleaseAgeExclude:
+  - starlight-package-managers@0.13.0
