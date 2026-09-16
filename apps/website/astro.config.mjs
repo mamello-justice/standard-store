@@ -2,16 +2,14 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
-const basePath = "/standard-store";
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://mamello-justice.github.io",
-  base: `${basePath}/`,
+  base: `/standard-store/`,
   integrations: [
     starlight({
       title: "Standard Store",
-      favicon: `${basePath}/favicon.ico`,
+      favicon: `/favicon.ico`,
       defaultLocale: "root",
       locales: {
         root: {
@@ -30,28 +28,28 @@ export default defineConfig({
         {
           label: "Documentation",
           items: [
-            { label: "Installation", link: `${basePath}/getting-started/installation/` },
-            { label: "Quick Start", link: `${basePath}/getting-started/quick-start/` },
-            { label: "Core Concepts", link: `${basePath}/getting-started/concepts/` },
+            { label: "Installation", link: `/getting-started/installation/` },
+            { label: "Quick Start", link: `/getting-started/quick-start/` },
+            { label: "Core Concepts", link: `/getting-started/concepts/` },
           ],
         },
         {
           label: "Guides",
           items: [
-            { label: "Creating a Store", link: `${basePath}/guides/creating-store/` },
-            { label: "Persistence & Adapters", link: `${basePath}/guides/adapters/` },
-            { label: "Middleware", link: `${basePath}/guides/middleware/` },
-            { label: "React Integration", link: `${basePath}/guides/react-integration/` },
-            { label: "Router Integration", link: `${basePath}/guides/router-integration/` },
+            { label: "Creating a Store", link: `/guides/creating-store/` },
+            { label: "Persistence & Adapters", link: `/guides/adapters/` },
+            { label: "Middleware", link: `/guides/middleware/` },
+            { label: "React Integration", link: `/guides/react-integration/` },
+            { label: "Router Integration", link: `/guides/router-integration/` },
           ],
         },
         {
           label: "API Reference",
           items: [
-            { label: "createStore", link: `${basePath}/api/create-store/` },
-            { label: "createStoreHook", link: `${basePath}/api/create-store-hook/` },
-            { label: "Storage Adapters", link: `${basePath}/api/adapters/` },
-            { label: "Middleware", link: `${basePath}/api/middleware/` },
+            { label: "createStore", link: `/api/create-store/` },
+            { label: "createStoreHook", link: `/api/create-store-hook/` },
+            { label: "Storage Adapters", link: `/api/adapters/` },
+            { label: "Middleware", link: `/api/middleware/` },
           ],
         },
       ],
