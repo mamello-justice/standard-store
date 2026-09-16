@@ -17,14 +17,19 @@
   "scripts": {
     "build": "vite build",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "test": "echo \"No tests configured\" && exit 0"
   },
   "dependencies": {
     "@standard-store/spec": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "^5.8.0",
-    "vite": "^6.3.0",
-    "vite-plugin-dts": "^4.5.0"
+    "@types/node": "catalog:",
+    "@typescript/native": "catalog:typescript7",
+    "eslint": "catalog:",
+    "typescript": "catalog:typescript6",
+    "typescript-eslint": "^8.68.0",
+    "vite": "^8.2.2",
+    "vite-plugin-dts": "^5.0.3"
   }
 }

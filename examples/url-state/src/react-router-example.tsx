@@ -1,11 +1,11 @@
 import { useMemo } from "react";
 import { useSearchParams } from "react-router";
-import { createStore } from "@standard-store/store";
-import {
-  createStoreHookContexts,
-  createStoreHook,
-} from "@standard-store/react";
 import { reactRouterAdapter } from "@standard-store/adapters/react-router";
+import {
+  createStoreHook,
+  createStoreHookContexts,
+} from "@standard-store/react";
+import { createStore } from "@standard-store/store";
 
 interface SearchState {
   q: string;

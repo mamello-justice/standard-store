@@ -4,9 +4,9 @@
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "noEmit": true,
     "paths": {
-      "@standard-store/spec": ["../../packages/spec/src/index.ts"],
-      "@standard-store/store": ["../../packages/store/src/index.ts"],
-      "@standard-store/adapters/*": ["../../packages/adapters/src/*/index.ts"]
+      "@standard-store/spec": ["../../packages/spec/dist/index.d.ts"],
+      "@standard-store/store": ["../../packages/store/dist/index.d.ts"],
+      "@standard-store/adapters/*": ["../../packages/adapters/dist/*/index.d.ts"]
     }
   },
   "include": ["src"]

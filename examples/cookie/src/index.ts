@@ -1,5 +1,5 @@
-import { createStore } from "@standard-store/store";
 import { cookieAdapter } from "@standard-store/adapters/cookie";
+import { createStore } from "@standard-store/store";
 
 interface Preferences {
   consent: "accepted" | "rejected";

@@ -1,11 +1,9 @@
-import eslint from "@eslint/js";
-import tseslint from "typescript-eslint";
+import baseConfig from "@standard-store/eslint-config";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 
-export default tseslint.config(
-  eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+export default [
+  ...baseConfig,
   react.configs.flat.recommended,
   react.configs.flat["jsx-runtime"],
   {
@@ -20,4 +18,4 @@ export default tseslint.config(
     settings: { react: { version: "detect" } },
   },
   { ignores: ["dist/"] },
-);
+];

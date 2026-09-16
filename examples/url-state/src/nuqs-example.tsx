@@ -1,10 +1,10 @@
 import { useMemo, useSyncExternalStore } from "react";
-import { createStore } from "@standard-store/store";
-import {
-  createStoreHookContexts,
-  createStoreHook,
-} from "@standard-store/react";
 import { nuqsAdapter } from "@standard-store/adapters/nuqs";
+import {
+  createStoreHook,
+  createStoreHookContexts,
+} from "@standard-store/react";
+import { createStore } from "@standard-store/store";
 
 interface FiltersState {
   category: string;

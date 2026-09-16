@@ -3,14 +3,16 @@
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src",
-    "lib": ["ESNext", "DOM"],
+    "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "jsx": "react-jsx",
+    "composite": true,
     "declaration": true,
-    "emitDeclarationOnly": true,
-    "paths": {
-      "@standard-store/spec": ["../spec/src/index.ts"],
-      "@standard-store/store": ["../store/src/index.ts"]
-    }
+    "emitDeclarationOnly": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "references": [
+    { "path": "../spec/tsconfig.lib.json" },
+    { "path": "../store/tsconfig.lib.json" }
+  ]
 }

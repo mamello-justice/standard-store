@@ -1,0 +1,17 @@
+diff --git a/lib/util/version.js b/lib/util/version.js
+index c9dc683b7d149c5a3a941bdcbd32f657facdfbf6..61e2085ce5765278580721f6026df1b9a7d26653 100644
+--- a/lib/util/version.js	
++++ b/lib/util/version.js
+@@ -28,7 +28,11 @@ function resetDetectedVersion() {
+ 
+ function resolveBasedir(contextOrFilename) {
+   if (contextOrFilename) {
+-    const filename = typeof contextOrFilename === 'string' ? contextOrFilename : contextOrFilename.getFilename();
++    const filename = typeof contextOrFilename === 'string'
++      ? contextOrFilename
++      : typeof contextOrFilename.getFilename === 'function'
++        ? contextOrFilename.getFilename()
++        : contextOrFilename.filename ?? '';
+     const dirname = path.dirname(filename);
+     try {
+       if (fs.statSync(filename).isFile()) {

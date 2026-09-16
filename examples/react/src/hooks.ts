@@ -1,10 +1,11 @@
-import {
-  createStoreHookContexts,
-  createStoreHook,
-} from "@standard-store/react";
 import type { StoreHook } from "@standard-store/react";
-import { appStore } from "./store";
+import {
+  createStoreHook,
+  createStoreHookContexts,
+} from "@standard-store/react";
+
 import type { AppState } from "./store";
+import { appStore } from "./store";
 
 const { storeContext } = createStoreHookContexts<AppState>();
 
