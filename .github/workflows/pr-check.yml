@@ -42,7 +42,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build eslint base config
-        run: pnpm --filter @standard-store build
+        run: pnpm --filter @standard-store/eslint-config build
 
       - name: Run lint
         run: pnpm turbo run lint
